@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Geist+Mono:wght@100..900&display=swap');
+
+:root {
+    --cor-fundo: #1e1e2f;
+    --cor-textos: #e0e0e0;
+    --cor-cards: #2a2a3b;
+    --cor-botoes: #4CAF50;
+    --cor-sombra: #868B8E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fira Code", monospace;
+    background-color: var(--cor-fundo);
+    color: var(--cor-textos);
+}
+
+header {
+    position: relative;
+    height: 70px;
+    background-color: var(--cor-fundo);
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3px;
+}
+
+.backToStart a{
+    text-decoration: none;
+}
+
+.backToStart i{
+    color: var(--cor-botoes);
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: var(--cor-cards);
+    padding: 7% 20%;
+    border-radius: 20px;
+    box-shadow: var(--cor-sombra);
+}
+
+
+.photo{
+    width: 7vw;
+    height: auto;
+    position:fixed;
+    right: 68%;
+    bottom: 30%;
+}
+
+.description h2{
+    position: relative;
+    left: 40%;
+    bottom: 30%;
+    font-size: larger;
+}
