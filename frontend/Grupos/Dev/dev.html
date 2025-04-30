@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFeira - Desenvolvedores</title>
+    <link rel="stylesheet" href="dev.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/frontend/index/index.html">
+                <h1>Desenvolvedores</h1>
+            </a>
+        </div>
+        <div class="user">
+            <button onclick="cadastro()">
+                <i class="fa-regular fa-user fa-3x"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <button onclick="Dev()">Desenvolvedores</button>
+                <button onclick="Design()">Designers</button>
+                <button onclick="Projeto()">Projetos</button>
+                <span class="blur2"></span>
+            </div>
+            <div class="container2">
+                <!-- <span class="blur"></span> -->
+
+            </div>
+        </div>
+    </main>
+
+    <div class="FileiraTextos" id="FileiraTextos">
+
+    </div>
+
+
+
+    <div class="footer">
+        <div class="inputs-container">
+            <input type="text" id="texto" placeholder="Digite sua mensagem">
+            <label for="imagem" class="custom-file-upload">
+                Escolher Imagem
+            </label>
+            <input type="file" id="imagem">
+        </div>
+        <button onclick="enviarMensagem(event)">
+            <i class="fa-solid fa-paper-plane fa-3x"></i>
+        </button>
+    </div>
+
+
+
+
+    <script src="dev.js"></script>
+    <script src="https://kit.fontawesome.com/8a3618c51f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

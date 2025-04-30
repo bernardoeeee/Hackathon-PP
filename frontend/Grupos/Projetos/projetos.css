@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Geist+Mono:wght@100..900&display=swap');
+
+:root {
+    --cor-fundo: #1e1e2f;
+    --cor-textos: #e0e0e0;
+    --cor-cards: #2a2a3b;
+    --cor-botoes: #4CAF50;
+    --cor-sombra: #868B8E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fira Code", monospace;
+    background-color: var(--cor-fundo);
+    color: var(--cor-textos);
+}
+
+header {
+    position: relative;
+    height: 70px;
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--cor-textos);
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 100px 999999px 70px var(--cor-sombra);
+    z-index: -10;
+}
+
+.blur2 {
+    position: absolute;
+    box-shadow: 0 200px 999999px 70px var(--cor-sombra);
+    z-index: -10;
+}
+
+.user button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.user i {
+    color: var(--cor-botoes);
+}
+
+/* SIDEBAR */
+
+.container {
+    width: 800px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+        "sidebar";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-right: 2px solid var(--cor-botoes);
+}
+
+.sidebar button {
+    background-color: var(--cor-botoes);
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: var(--cor-sombra);
+}
+
+.sidebar button:hover {
+    transform: translateY(-10%);
+    background-color: #87ca89;
+}
+
+
+
+/* .footer button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.footer input {
+    padding: 15px 10px;
+    background: var(--cor-cards);
+    border-radius: 20px;
+    width: 250px;
+    color: var(--cor-textos);
+}
+
+
+.footer button i {
+    color: var(--cor-botoes);
+    display: flex;
+    justify-content: center;
+}
+
+.footer #image{
+    background: transparent;
+}
+
+
+.footer {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+} */
+
+.footer {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputs-container {
+    display: flex;
+    gap: 10px;
+}
+
+.footer input[type="text"] {
+    padding: 15px 10px;
+    background: var(--cor-cards);
+    border-radius: 20px;
+    width: 250px;
+    color: var(--cor-textos);
+    border: 1px solid var(--cor-botoes);
+}
+
+.footer input[type="file"] {
+    display: none;
+    /* Esconde o input de file */
+}
+
+.custom-file-upload {
+    background-color: var(--cor-botoes);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.custom-file-upload:hover {
+    background-color: #87ca89;
+}
+
+.footer button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.footer button i {
+    color: var(--cor-botoes);
+    display: flex;
+    justify-content: center;
+}
+
+
+.FileiraTextos {
+    position: absolute;
+    top: 100px;
+    /* abaixo do header */
+    left: 300px;
+    /* um pouco afastado da sidebar */
+    right: 20px;
+    bottom: 120px;
+    /* espaço para o footer */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Deixa a barra de rolagem mais estilizada */
+.FileiraTextos::-webkit-scrollbar {
+    width: 8px;
+}
+
+.FileiraTextos::-webkit-scrollbar-thumb {
+    background-color: var(--cor-botoes);
+    border-radius: 10px;
+}
+
+
+
+/* ----------------------------- */
+
+/* RESPONSIVIDADE - ARRUMAR */
+
+@media (max-width: 1285.60px) {
+    main {
+        width: 90%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .cadastrar {
+        width: 70%;
+    }
+
+    #bloco {
+        width: 20%;
+    }
+
+    #status {
+        width: 25%;
+    }
+
+    .container {
+        height: 100%;
+
+    }
+
+    #titulo {
+        width: 100%;
+        margin-top: 3vh;
+    }
+
+    .form-box {
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    main {
+        width: 80%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    .cadastrar {
+        width: 80%;
+    }
+
+    #bloco {
+        width: 20%;
+    }
+
+    #status {
+        width: 30%;
+    }
+
+    .container {
+        height: 80%;
+
+    }
+
+    #titulo {
+        width: 100%;
+        margin-top: 3vh;
+    }
+
+    .form-box {
+        height: 100%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    main {
+        width: 80%;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    .cadastrar {
+        width: 70%;
+    }
+
+    #bloco {
+        width: 20%;
+    }
+
+    #status {
+        width: 60%;
+    }
+
+    .container {
+        height: 70%;
+
+    }
+
+    #titulo {
+        width: 100%;
+        margin-top: 3vh;
+    }
+
+    .form-box {
+        height: 100%;
+    }
+
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>DevFeira - Cadastro</title>
+</head>
+
+<body>
+    <span class="blur"></span>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Criar uma conta</h1>
+                <div class="social-icon">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Digite seu nome">
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Digite seu Email">
+
+                <label for="senha">Senha</label>
+                <input id="senha" type="password" placeholder="Digite sua senha">
+
+                <button onclick="signUp(event)" class="cadastrar">Registar</button>
+            </form>
+        </div>
+        <span class="blur"></span>
+        <div class="form-container sign-in">
+            <form id="loginForm">
+                <h1 id="titulo">Entrar na conta</h1>
+                <div class="social-icon">
+                    <a href="/frontend/index/index.html" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <label for="nome">Nome</label>
+                <input id="nomeLogin" type="text" placeholder="Digite seu nome">
+
+                <label for="email">Email</label>
+                <input id="emailLogin" type="email" placeholder="Digite seu Email">
+
+                <label for="senha">Senha</label>
+                <input id="senhaLogin" type="password" placeholder="Digite sua senha">
+                <button type="submit">Entrar</button>
+            </form>
+
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Seja bem-vindo!</h1>
+                    <p>Registre-se com seus detalhes pessoais para utilizar ao máximo o site</p>
+                    <button class="hidden" id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Olá!</h1>
+                    <p>Entre com seus detalhes pessoais para usar ao máximo o site</p>
+                    <button class="hidden" id="register">Resgistar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/8a3618c51f.js" crossorigin="anonymous"></script>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>
