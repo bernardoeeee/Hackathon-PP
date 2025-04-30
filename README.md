@@ -37,7 +37,7 @@ As linguagens utilizadas no VSCode foram:
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/hackathon-3B-feira-trocas-digitais/>
+$ git clone <https://github.com/bernardoeeee/Hackathon-3B-FeiraTrocaDigital.git>
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd Hackathon_PP
